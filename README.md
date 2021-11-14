@@ -1,46 +1,45 @@
-# Getting Started with Create React App
+## React Coding Challenge
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This code challenge tests your skills in react.js (using Typescript), testing and modular design.
+The purpose of the application is to correctly render a stream of messages coming from an api. Different messages will be coded different colors and require slightly different rendering. The rules are described in detail below.
 
-## Available Scripts
+This challenge already includes an API response. It is not required or expected for you to make any changes to this interaction.
 
-In the project directory, you can run:
+The 3 priorities that we provide you are:
+  * 0 = error
+  * 1 = warning
+  * 2 = info
 
-### `yarn start`
+### Acceptance Criteria
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. Messages should be rendered in a table-like structure. The newest messages should appear at the top of their respective columns.
+2. Provide test coverage of the components. 
+3. Ensure UI Matches the image
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Note
 
-### `yarn test`
+1. The example design below.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Example Design](./mock.png)
 
-### `yarn build`
+2. The messages should be color coded depending on the priority of the message. The appropriate color per priority is:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   * error: #F56236
+   * warning: #FCE788
+   * info: #88FCA3
+3. Each time a message with the priority level of error is received, a snackbar containing the error message should also appear at the top right of the application. The error should disappear in 2 seconds, when another error message takes its place, or when the user clears it via the provided button located in the error message.
+4. A user should be able to clear all messages at any point.
+5. A user should be able to clear a specific message in a specific column
+6. A user should be able to start and stop incoming messages. By default the messages should be running and displaying on the grid. The start/stop button should update depending on the state of the feed.
+7. A user should see a count of specific messages in each column
+8. Use material-ui components and styled-component styles
+9. Write meaninful and useful unit tests. `jest` is already included in the project
+10. Use functional components
+11. Improve code structure. Your implementation should be more like how you do it for any production grade application development
+12. Define Typescript types where necessary
+13. Please submit your code either via Github or Gitlab
+14. Use React context API and hooks to showcase your understanding of these React features
+15. Pay attention to performance of your page rendering
+16. "nunffsaid.com Coding Challenge" is part of the design. Make sure that you dont miss that header
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+***Applicants are provided this challenge with no expectation on deadline. Please take the time you need to complete the challenge to the best of your ability.***
